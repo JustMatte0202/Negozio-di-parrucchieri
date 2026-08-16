@@ -1,0 +1,318 @@
+id_cliente,nome,cognome,anno_nascita,canale_acquisizione,data_prima_visita
+1,Francesco,Rossi,1990,Passaparola,2024-09-10
+2,Andrea,Lombardi,2009,Passaparola,2024-09-04
+3,Salvatore,Colombo,2008,Passaparola,2024-08-02
+4,Fabio,De Luca,1998,Passaparola,2024-08-11
+5,Stefano,Esposito,2000,Google,2024-08-06
+6,Salvatore,Esposito,2003,Passaparola,2024-08-30
+7,Enrico,Colombo,1963,Passaparola,2024-08-24
+8,Sergio,Esposito,2003,Passaparola,2024-08-15
+9,Davide,Fontana,1989,Google,2024-08-23
+10,Salvatore,Mariani,1986,Passaparola,2024-08-11
+11,Salvatore,Ricci,1996,Google,2024-09-14
+12,Stefano,Marino,1963,Passaparola,2024-08-21
+13,Gabriele,Conti,2013,Passaparola,2024-09-11
+14,Claudio,Lombardi,2009,Passava davanti,2024-08-17
+15,Lorenzo,Costa,1966,Google,2024-08-09
+16,Federico,Moretti,1963,Passaparola,2024-09-13
+17,Sergio,Rossi,1969,Instagram,2024-09-05
+18,Francesco,Greco,2010,Passaparola,2024-08-22
+19,Lorenzo,Rinaldi,1977,Instagram,2024-08-17
+20,Lorenzo,Moretti,1980,Passaparola,2024-09-10
+21,Filippo,Rossi,1996,Instagram,2024-09-03
+22,Simone,Russo,1985,Passava davanti,2024-08-20
+23,Vincenzo,Rizzo,1971,Passaparola,2024-08-05
+24,Sergio,Moretti,2009,Passava davanti,2024-09-03
+25,Antonio,Conti,2002,Passaparola,2024-09-15
+26,Giovanni,Rossi,1984,Instagram,2024-08-05
+27,Andrea,Martini,1959,Passava davanti,2024-08-15
+28,Davide,Rizzo,1971,Google,2024-09-01
+29,Emanuele,De Luca,1979,Passaparola,2024-08-31
+30,Sergio,Mariani,1961,Instagram,2024-08-30
+31,Emanuele,Galli,1968,Passaparola,2024-08-22
+32,Giuseppe,Mancini,1986,Passava davanti,2024-08-12
+33,Francesco,Russo,1956,Passava davanti,2024-09-05
+34,Gabriele,Colombo,2006,Passava davanti,2024-09-01
+35,Filippo,Caruso,2013,Passaparola,2024-08-17
+36,Tommaso,Santoro,2017,Passaparola,2024-09-05
+37,Luca,Mariani,1995,Passaparola,2024-09-04
+38,Matteo,Russo,1965,Passava davanti,2024-09-03
+39,Massimo,Lombardi,1986,Instagram,2024-08-16
+40,Enrico,Giordano,1995,Passava davanti,2024-09-07
+41,Stefano,Bianchi,1993,Instagram,2024-08-17
+42,Enrico,Esposito,1964,Instagram,2024-09-09
+43,Massimo,Ricci,2002,Passaparola,2024-08-05
+44,Emanuele,Barbieri,1956,Instagram,2024-09-09
+45,Giuseppe,Esposito,1968,Google,2024-08-09
+46,Giovanni,Colombo,1988,Instagram,2024-09-15
+47,Nicola,De Luca,1990,Passaparola,2024-08-06
+48,Matteo,Mariani,2011,Instagram,2024-08-17
+49,Massimo,Bianchi,1959,Google,2024-09-14
+50,Antonio,Gallo,1960,Passava davanti,2024-08-03
+51,Massimo,Galli,2007,Passava davanti,2024-08-23
+52,Emanuele,Caruso,1977,Passava davanti,2024-08-11
+53,Emanuele,Fontana,1986,Passaparola,2024-08-27
+54,Sergio,Costa,1983,Passaparola,2024-08-03
+55,Simone,Rossi,1979,Passaparola,2024-08-15
+56,Riccardo,Barbieri,2006,Instagram,2024-08-18
+57,Massimo,Marino,1977,Instagram,2024-08-08
+58,Claudio,Caruso,1995,Passaparola,2024-08-23
+59,Giuseppe,Russo,2010,Passaparola,2024-08-13
+60,Davide,Gallo,2010,Passaparola,2024-09-12
+61,Claudio,Martini,1993,Instagram,2024-09-12
+62,Salvatore,Bianchi,1979,Passaparola,2024-08-19
+63,Enrico,Greco,2006,Instagram,2024-09-09
+64,Dario,Barbieri,1996,Instagram,2024-09-07
+65,Tommaso,Ferrari,1991,Instagram,2024-08-11
+66,Tommaso,Greco,1983,Google,2024-08-16
+67,Dario,Galli,1964,Instagram,2024-08-31
+68,Simone,Bianchi,1955,Passava davanti,2024-08-25
+69,Simone,Romano,2014,Passaparola,2024-08-28
+70,Emanuele,Mancini,1995,Passava davanti,2024-08-09
+71,Federico,Ferrara,2012,Passava davanti,2024-09-02
+72,Pietro,Barbieri,1990,Google,2024-08-16
+73,Andrea,Santoro,1991,Passaparola,2024-08-29
+74,Alessandro,Ricci,2004,Instagram,2024-08-09
+75,Salvatore,Mancini,2008,Passaparola,2024-08-22
+76,Fabio,Rossi,2003,Instagram,2024-09-07
+77,Claudio,Rizzo,1983,Instagram,2024-08-27
+78,Tommaso,Fontana,2006,Google,2024-08-22
+79,Salvatore,Rossi,2005,Instagram,2024-09-09
+80,Sergio,Mancini,1978,Passaparola,2024-08-09
+81,Vincenzo,Martini,2003,Passaparola,2024-08-22
+82,Marco,Mariani,1961,Passava davanti,2024-08-31
+83,Luca,Rinaldi,1958,Passava davanti,2024-09-11
+84,Alessandro,Costa,1969,Instagram,2024-08-16
+85,Matteo,Moretti,1969,Google,2024-08-24
+86,Filippo,Greco,2003,Passaparola,2024-08-02
+87,Simone,Esposito,1993,Passava davanti,2024-09-10
+88,Emanuele,Russo,1999,Instagram,2024-09-06
+89,Marco,Galli,2008,Google,2024-08-22
+90,Fabio,Bianchi,2010,Passaparola,2024-08-30
+91,Enrico,Marino,1996,Passava davanti,2024-09-24
+92,Paolo,Lombardi,2003,Passaparola,2024-09-25
+93,Massimo,Moretti,1990,Instagram,2024-10-09
+94,Federico,Costa,1985,Instagram,2024-10-24
+95,Andrea,Greco,1983,Passaparola,2024-10-01
+96,Salvatore,Giordano,1999,Passaparola,2024-10-16
+97,Giuseppe,Greco,1987,Passaparola,2024-10-15
+98,Vincenzo,Santoro,1978,Passaparola,2024-10-18
+99,Antonio,Esposito,1979,Passaparola,2024-11-25
+100,Alessandro,Marino,1960,Passava davanti,2024-11-18
+101,Sergio,Rinaldi,2017,Passaparola,2024-11-21
+102,Giovanni,Romano,1961,Passaparola,2024-11-15
+103,Gabriele,Ferrari,1961,Passaparola,2024-11-13
+104,Francesco,Rizzo,2008,Instagram,2024-11-08
+105,Paolo,Leone,2011,Passaparola,2024-11-13
+106,Luca,Moretti,1967,Passava davanti,2024-11-20
+107,Andrea,Romano,1955,Passaparola,2024-12-18
+108,Antonio,Santoro,1991,Google,2024-12-08
+109,Nicola,Lombardi,1980,Passaparola,2024-12-09
+110,Pietro,Bianchi,1964,Passaparola,2024-12-09
+111,Paolo,Esposito,2014,Instagram,2024-12-19
+112,Gabriele,Mancini,1965,Instagram,2024-12-18
+113,Andrea,Ricci,1957,Passava davanti,2024-12-01
+114,Vincenzo,Romano,2015,Instagram,2024-12-25
+115,Federico,Barbieri,2017,Passava davanti,2024-12-19
+116,Francesco,Galli,1975,Passaparola,2024-12-22
+117,Pietro,Rinaldi,1959,Instagram,2024-12-13
+118,Stefano,Galli,2020,Google,2025-01-25
+119,Luca,Colombo,2001,Instagram,2025-01-14
+120,Giuseppe,Rizzo,1971,Passava davanti,2025-01-07
+121,Nicola,Moretti,1985,Google,2025-01-01
+122,Simone,Ferrara,1969,Instagram,2025-01-03
+123,Antonio,Giordano,1989,Passaparola,2025-01-23
+124,Alessandro,Conti,1979,Passava davanti,2025-01-18
+125,Federico,Bruno,2019,Passaparola,2025-02-28
+126,Enrico,Fontana,2017,Passava davanti,2025-02-19
+127,Stefano,Mancini,1996,Passava davanti,2025-02-18
+128,Vincenzo,De Luca,1960,Passaparola,2025-02-28
+129,Tommaso,Caruso,1974,Instagram,2025-02-13
+130,Sergio,Galli,2011,Passaparola,2025-02-11
+131,Nicola,Bianchi,1964,Instagram,2025-02-28
+132,Andrea,Galli,1997,Passava davanti,2025-02-21
+133,Fabio,Martini,2017,Passava davanti,2025-02-21
+134,Simone,Mariani,1966,Passaparola,2025-03-22
+135,Paolo,Romano,1993,Passava davanti,2025-03-04
+136,Riccardo,De Luca,1973,Passaparola,2025-03-12
+137,Matteo,Ferrari,2003,Instagram,2025-03-06
+138,Paolo,Barbieri,1987,Instagram,2025-03-08
+139,Tommaso,Rizzo,1975,Passaparola,2025-03-10
+140,Fabio,Marino,2013,Google,2025-03-14
+141,Simone,Conti,2000,Instagram,2025-03-04
+142,Marco,Lombardi,1961,Passava davanti,2025-03-22
+143,Emanuele,Gallo,1983,Instagram,2025-04-20
+144,Nicola,Esposito,1960,Passaparola,2025-04-25
+145,Andrea,Leone,1992,Passaparola,2025-04-05
+146,Massimo,Gallo,2019,Passava davanti,2025-04-18
+147,Emanuele,Greco,1998,Google,2025-04-16
+148,Sergio,Fontana,2005,Passava davanti,2025-04-08
+149,Marco,Marino,1970,Instagram,2025-04-13
+150,Riccardo,Esposito,1984,Instagram,2025-05-13
+151,Simone,Barbieri,1963,Instagram,2025-05-20
+152,Francesco,Bianchi,1960,Passava davanti,2025-05-14
+153,Massimo,Rizzo,1972,Passaparola,2025-05-08
+154,Federico,Lombardi,1974,Passava davanti,2025-05-18
+155,Fabio,Gallo,1982,Passaparola,2025-05-14
+156,Riccardo,Rizzo,2000,Passaparola,2025-05-22
+157,Pietro,Mancini,1966,Instagram,2025-05-28
+158,Emanuele,Bruno,1986,Passava davanti,2025-05-02
+159,Pietro,Galli,1984,Passaparola,2025-05-25
+160,Sergio,Bianchi,1971,Instagram,2025-05-09
+161,Emanuele,Ricci,1996,Passaparola,2025-06-26
+162,Francesco,Mariani,1963,Instagram,2025-06-17
+163,Lorenzo,Ricci,1960,Google,2025-06-15
+164,Marco,Russo,2016,Google,2025-06-21
+165,Andrea,Bruno,1973,Passaparola,2025-06-15
+166,Giovanni,Conti,1992,Instagram,2025-06-23
+167,Sergio,Barbieri,1982,Passaparola,2025-06-04
+168,Federico,Mariani,1967,Passaparola,2025-06-13
+169,Tommaso,Leone,2015,Passaparola,2025-06-05
+170,Claudio,Gallo,1971,Instagram,2025-06-24
+171,Francesco,De Luca,2000,Passava davanti,2025-07-22
+172,Antonio,Moretti,1994,Passaparola,2025-07-02
+173,Simone,Galli,1968,Passaparola,2025-07-16
+174,Simone,Caruso,2009,Google,2025-07-19
+175,Dario,Leone,1989,Passaparola,2025-07-21
+176,Riccardo,Rossi,1978,Passava davanti,2025-07-11
+177,Nicola,Rossi,1966,Google,2025-07-24
+178,Riccardo,Greco,1996,Google,2025-07-06
+179,Tommaso,De Luca,2017,Instagram,2025-08-02
+180,Enrico,Costa,1994,Passaparola,2025-08-04
+181,Antonio,Colombo,1972,Google,2025-08-07
+182,Federico,Romano,1971,Passaparola,2025-08-24
+183,Andrea,Conti,1960,Passaparola,2025-08-22
+184,Stefano,Santoro,2008,Passaparola,2025-08-19
+185,Dario,Mancini,2001,Passaparola,2025-09-26
+186,Lorenzo,Ferrari,2005,Passava davanti,2025-09-13
+187,Andrea,Giordano,1969,Instagram,2025-09-06
+188,Davide,Romano,1974,Google,2025-09-24
+189,Vincenzo,Lombardi,2012,Instagram,2025-09-21
+190,Giovanni,Bianchi,2011,Passaparola,2025-09-11
+191,Luca,Gallo,2019,Passaparola,2025-09-19
+192,Antonio,Ferrari,1966,Instagram,2025-09-27
+193,Luca,Mancini,1979,Passaparola,2025-09-26
+194,Francesco,Caruso,1998,Passava davanti,2025-09-15
+195,Fabio,Mancini,2011,Instagram,2025-09-08
+196,Stefano,De Luca,1998,Instagram,2025-09-10
+197,Stefano,Greco,1987,Google,2025-10-22
+198,Giovanni,Ferrari,1973,Passava davanti,2025-10-05
+199,Alessandro,Moretti,1965,Passaparola,2025-10-13
+200,Pietro,Mariani,1966,Instagram,2025-10-05
+201,Matteo,Colombo,1998,Passava davanti,2025-10-10
+202,Sergio,Caruso,1967,Instagram,2025-10-05
+203,Tommaso,Bruno,1971,Instagram,2025-10-02
+204,Dario,Caruso,1976,Google,2025-10-25
+205,Paolo,Moretti,1991,Google,2025-10-08
+206,Gabriele,Martini,1979,Passaparola,2025-10-10
+207,Vincenzo,Conti,2019,Instagram,2025-11-10
+208,Sergio,Marino,1961,Instagram,2025-11-05
+209,Sergio,Giordano,1970,Passaparola,2025-11-23
+210,Alessandro,Ferrara,2010,Passaparola,2025-11-17
+211,Federico,Russo,2005,Instagram,2025-11-01
+212,Marco,Bruno,1967,Google,2025-11-08
+213,Antonio,Leone,2015,Instagram,2025-11-02
+214,Marco,Martini,1965,Passaparola,2025-11-20
+215,Dario,Giordano,2009,Passaparola,2025-11-24
+216,Emanuele,Moretti,2013,Passaparola,2025-11-08
+217,Nicola,Giordano,1985,Google,2025-11-01
+218,Lorenzo,Gallo,1963,Passava davanti,2025-12-22
+219,Marco,Conti,2015,Passaparola,2025-12-18
+220,Riccardo,Caruso,1963,Passaparola,2025-12-01
+221,Claudio,Rinaldi,1997,Passaparola,2025-12-19
+222,Tommaso,Mancini,2016,Instagram,2025-12-06
+223,Luca,Greco,1980,Passaparola,2025-12-15
+224,Lorenzo,Conti,2015,Passaparola,2025-12-10
+225,Vincenzo,Russo,1997,Passaparola,2025-12-28
+226,Paolo,Martini,2004,Passaparola,2025-12-24
+227,Lorenzo,Marino,1965,Google,2025-12-26
+228,Salvatore,Greco,1996,Passaparola,2025-12-06
+229,Matteo,Santoro,2011,Passaparola,2025-12-20
+230,Federico,Marino,1962,Passaparola,2025-12-20
+231,Tommaso,Romano,1958,Passaparola,2025-12-24
+232,Vincenzo,Barbieri,2001,Passaparola,2025-12-05
+233,Riccardo,Gallo,2011,Google,2026-01-15
+234,Nicola,Marino,1986,Passava davanti,2026-01-11
+235,Filippo,Rizzo,1970,Passaparola,2026-01-13
+236,Filippo,Costa,1980,Passaparola,2026-01-20
+237,Paolo,Ferrari,1995,Instagram,2026-01-23
+238,Sergio,Romano,1977,Google,2026-01-10
+239,Emanuele,Costa,1958,Passaparola,2026-01-26
+240,Massimo,Ferrari,1963,Passaparola,2026-01-18
+241,Enrico,Ferrari,1971,Passava davanti,2026-01-25
+242,Riccardo,Bianchi,1978,Google,2026-01-17
+243,Pietro,Esposito,2021,Passaparola,2026-01-02
+244,Massimo,Greco,1965,Passaparola,2026-02-17
+245,Salvatore,Ferrari,2019,Instagram,2026-02-21
+246,Dario,Mariani,1998,Google,2026-02-22
+247,Luca,Barbieri,1988,Instagram,2026-02-03
+248,Nicola,Rizzo,1992,Instagram,2026-02-01
+249,Fabio,Russo,1975,Passaparola,2026-02-22
+250,Giovanni,Galli,1995,Google,2026-02-05
+251,Riccardo,Giordano,1968,Passaparola,2026-02-25
+252,Federico,Ricci,1975,Google,2026-02-05
+253,Gabriele,Giordano,2014,Instagram,2026-02-06
+254,Lorenzo,Mancini,1985,Passaparola,2026-03-13
+255,Massimo,Ferrara,2015,Passaparola,2026-03-20
+256,Riccardo,Russo,2006,Passaparola,2026-03-09
+257,Stefano,Giordano,2012,Google,2026-03-03
+258,Francesco,Conti,2002,Google,2026-03-20
+259,Davide,Moretti,2020,Passaparola,2026-03-05
+260,Massimo,Giordano,1972,Passaparola,2026-03-11
+261,Claudio,Ferrara,1993,Instagram,2026-03-20
+262,Gabriele,Ferrara,1957,Passaparola,2026-03-23
+263,Emanuele,Martini,1958,Instagram,2026-03-10
+264,Enrico,Lombardi,1984,Google,2026-03-25
+265,Dario,Rinaldi,2003,Passaparola,2026-03-24
+266,Francesco,Colombo,1957,Passaparola,2026-03-23
+267,Gabriele,Galli,1962,Google,2026-03-14
+268,Matteo,Mancini,1998,Instagram,2026-04-11
+269,Emanuele,Santoro,1988,Instagram,2026-04-21
+270,Simone,Greco,1991,Google,2026-04-10
+271,Salvatore,Leone,1990,Passaparola,2026-04-12
+272,Pietro,Gallo,1973,Passaparola,2026-04-13
+273,Claudio,Costa,1982,Passaparola,2026-04-15
+274,Alessandro,Esposito,1985,Passaparola,2026-04-09
+275,Luca,Esposito,2007,Passaparola,2026-04-08
+276,Matteo,De Luca,2015,Instagram,2026-04-01
+277,Nicola,Russo,1966,Instagram,2026-04-10
+278,Filippo,Leone,1977,Passaparola,2026-05-02
+279,Stefano,Caruso,2018,Passaparola,2026-05-27
+280,Marco,Greco,1968,Passava davanti,2026-05-02
+281,Paolo,Marino,1979,Google,2026-05-18
+282,Fabio,Romano,1956,Google,2026-05-09
+283,Massimo,Conti,2009,Instagram,2026-05-07
+284,Gabriele,Bruno,1986,Passaparola,2026-05-05
+285,Antonio,Lombardi,1956,Passaparola,2026-05-11
+286,Paolo,Greco,1975,Passaparola,2026-05-04
+287,Francesco,Barbieri,1992,Passaparola,2026-05-25
+288,Fabio,Rizzo,2015,Google,2026-06-20
+289,Tommaso,Rinaldi,1965,Instagram,2026-06-08
+290,Pietro,Rizzo,2019,Passaparola,2026-06-19
+291,Tommaso,Colombo,2017,Passaparola,2026-06-17
+292,Lorenzo,De Luca,2013,Instagram,2026-06-05
+293,Giuseppe,Ferrara,1955,Google,2026-06-24
+294,Andrea,Rizzo,1962,Passava davanti,2026-06-23
+295,Vincenzo,Bianchi,2008,Passaparola,2026-06-10
+296,Stefano,Ferrari,1972,Instagram,2026-06-13
+297,Lorenzo,Bianchi,1983,Google,2026-06-13
+298,Federico,Rizzo,2003,Google,2026-06-22
+299,Filippo,Martini,1969,Passaparola,2026-06-07
+300,Simone,Colombo,1963,Passaparola,2026-06-01
+301,Luca,Ricci,1960,Passaparola,2026-06-28
+302,Luca,Bianchi,2019,Passava davanti,2026-07-25
+303,Enrico,Moretti,1996,Passaparola,2026-07-11
+304,Antonio,Marino,1962,Instagram,2026-07-14
+305,Salvatore,Costa,1961,Passava davanti,2026-07-21
+306,Federico,Bianchi,1993,Passaparola,2026-07-11
+307,Antonio,Galli,1973,Google,2026-07-08
+308,Stefano,Ricci,1987,Passaparola,2026-07-18
+309,Davide,Russo,1989,Passaparola,2026-07-12
+310,Emanuele,Rinaldi,1982,Instagram,2026-07-07
+311,Davide,Leone,1979,Passava davanti,2026-07-01
+312,Fabio,Moretti,1981,Passaparola,2026-07-08
+313,Paolo,Rizzo,2000,Passaparola,2026-07-13
+314,Emanuele,Mariani,2015,Google,2026-07-04
+315,Claudio,Bianchi,1957,Passaparola,2026-08-08
+316,Davide,Bruno,1984,Passaparola,2026-08-05
+317,Giuseppe,Rinaldi,2017,Passava davanti,2026-08-11

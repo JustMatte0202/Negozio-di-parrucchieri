@@ -1,0 +1,9 @@
+id_servizio,nome_servizio,categoria,prezzo_listino,durata_min
+1,Taglio uomo,Taglio,18.0,30
+2,Taglio + barba,Taglio,26.0,45
+3,Barba,Barba,12.0,20
+4,Rasatura tradizionale,Barba,15.0,30
+5,Taglio bambino,Taglio,12.0,25
+6,Shampoo + styling,Styling,10.0,15
+7,Colorazione,Colore,35.0,60
+8,Trattamento cute,Trattamenti,22.0,30
