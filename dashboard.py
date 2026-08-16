@@ -63,7 +63,9 @@ def carica_dati():
     df["mese"] = df["data"].dt.to_period("M").dt.to_timestamp()
     giorni = {0: "Lun", 1: "Mar", 2: "Mer", 3: "Gio", 4: "Ven", 5: "Sab", 6: "Dom"}
     df["giorno_settimana"] = df["data"].dt.weekday.map(giorni)
-    df["cliente_completo"] = df["nome"] + " " + df["cognome"]
+    df["cliente_completo"] = (
+        df["nome"].fillna("") + " " + df["cognome"].fillna("")
+    ).str.strip()
     # Un appuntamento è di un "nuovo cliente" se cade nello stesso mese
     # della sua prima visita.
     df["tipo_cliente"] = (

@@ -89,15 +89,27 @@ stesso dataset.
 
 ## Passare ai dati veri del negozio
 
-Quando vorrai usare i dati di tuo padre:
+Il progetto include un registro Excel pensato per chi oggi tiene tutto su carta:
 
-1. Compila i tre CSV in `data/` con le stesse colonne (bastano Excel o Google
-   Sheets, esportando in CSV). Se il negozio non prende appuntamenti, puoi
-   registrare solo gli scontrini: `data`, `ora`, `servizio`, `prezzo`.
-2. La dashboard continuerà a funzionare senza modifiche.
-3. **Attenzione alla privacy**: nomi e telefoni dei clienti sono dati personali
-   (GDPR). Per le analisi basta un ID anonimo — tieni l'anagrafica vera fuori
-   da GitHub e non pubblicarla mai in un repo pubblico.
+1. Apri **`registro_giornaliero.xlsx`** e leggi il foglio *Istruzioni*.
+   Prima cosa: sistema il foglio *Listino* con i servizi e i prezzi veri.
+2. Ogni sera, 5 minuti: una riga per ogni cliente servito nel foglio
+   *Registro* (data, ora, servizio dal menu a tendina, prezzo incassato).
+   Il nome del cliente è facoltativo. Non serve digitalizzare il passato:
+   si parte da oggi in avanti.
+3. Quando vuoi vedere la dashboard sui dati veri:
+
+   ```bash
+   python importa_registro.py     # trasforma il registro nei CSV in data/
+   streamlit run dashboard.py
+   ```
+
+   (`importa_registro.py` sovrascrive il dataset sintetico in `data/`;
+   per riaverlo basta rilanciare `python genera_dataset.py`.)
+
+**Attenzione alla privacy**: se registri i nomi dei clienti, il registro
+contiene dati personali (GDPR). Tienilo solo sul computer del negozio e non
+caricarlo mai in un repository pubblico.
 
 ## Idee di analisi per allenarti
 
