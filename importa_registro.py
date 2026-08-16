@@ -89,7 +89,7 @@ def main() -> None:
             "nome_servizio": str(nome).strip(),
             "categoria": str(categoria).strip() if categoria else "Altro",
             "prezzo_listino": float(prezzo),
-            "durata_min": int(durata) if durata else 30,
+            "durata_min": int(durata) if durata is not None else 0,
         })
         id_per_nome[normalizza(nome)] = nuovo_id
     if not servizi:
