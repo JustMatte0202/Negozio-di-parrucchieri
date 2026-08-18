@@ -7,9 +7,9 @@ aggiungere prodotti basta aggiungere righe a quel file e rilanciare:
 
     python crea_registro.py
 
-I servizi (taglio, barba, ecc.) sono ancora quelli di esempio: vanno
-sostituiti con i prezzi veri del negozio. Nel foglio sono evidenziati in
-giallo proprio per ricordarlo.
+Servizi e prodotti arrivano da due file CSV (`listino_servizi.csv` e
+`listino_prodotti.csv`): per correggere un prezzo o aggiungere una voce
+basta modificare quelli e rilanciare lo script.
 """
 
 import csv
@@ -27,31 +27,26 @@ BLU_SCURO = "1F4E79"
 GIALLO = "FFF2CC"        # convenzione: celle da compilare/correggere
 GRIGIO = "F2F2F2"        # righe prodotto (dati già confermati)
 
-# Servizi ancora da confermare con il listino vero del negozio.
-SERVIZI = [
-    ("Taglio uomo", "Servizio - Taglio", 18.0, 30),
-    ("Taglio + barba", "Servizio - Taglio", 26.0, 45),
-    ("Barba", "Servizio - Barba", 12.0, 20),
-    ("Rasatura tradizionale", "Servizio - Barba", 15.0, 30),
-    ("Taglio bambino", "Servizio - Taglio", 12.0, 25),
-    ("Shampoo + styling", "Servizio - Styling", 10.0, 15),
-    ("Colorazione", "Servizio - Colore", 35.0, 60),
-    ("Trattamento cute", "Servizio - Trattamenti", 22.0, 30),
-]
 
+def carica_csv(nome_file: str, con_durata: bool) -> list[tuple[str, str, float, int]]:
+    """Legge un listino da CSV -> (nome, categoria, prezzo, durata in minuti).
 
-def carica_prodotti() -> list[tuple[str, str, float, int]]:
-    """Legge listino_prodotti.csv -> (nome con formato, categoria, prezzo, 0)."""
-    percorso = CARTELLA / "listino_prodotti.csv"
+    I prodotti hanno un formato nel nome (es. "250 ml") perché ogni formato
+    ha un prezzo diverso; i servizi no, ma hanno una durata.
+    """
+    percorso = CARTELLA / nome_file
     if not percorso.exists():
         return []
-    prodotti = []
+    voci = []
     with open(percorso, encoding="utf-8") as f:
         for riga in csv.DictReader(f):
-            nome = f"{riga['nome'].strip()} {riga['formato'].strip()}".strip()
-            prodotti.append((nome, riga["categoria"].strip(),
-                             float(riga["prezzo"]), 0))
-    return prodotti
+            nome = riga["nome"].strip()
+            if not con_durata:
+                nome = f"{nome} {riga['formato'].strip()}".strip()
+            durata = riga.get("durata_min", "").strip() if con_durata else ""
+            voci.append((nome, riga["categoria"].strip(), float(riga["prezzo"]),
+                         int(durata) if durata else 0))
+    return voci
 
 
 def intestazione(ws, colonne, larghezze) -> None:
@@ -65,8 +60,9 @@ def intestazione(ws, colonne, larghezze) -> None:
 
 
 def main() -> None:
-    prodotti = carica_prodotti()
-    voci = [(n, c, p, d) for n, c, p, d in SERVIZI] + prodotti
+    servizi = carica_csv("listino_servizi.csv", con_durata=True)
+    prodotti = carica_csv("listino_prodotti.csv", con_durata=False)
+    voci = servizi + prodotti
 
     # I nomi finiscono nel menu a tendina e collegano Registro e Listino:
     # se due voci avessero lo stesso nome non si capirebbe quale è stata venduta.
@@ -98,8 +94,8 @@ def main() -> None:
         ("prima i SERVIZI (categoria che inizia per 'Servizio - '), poi i PRODOTTI (categoria 'Prodotto - ...').", 11, False),
         ("Ogni formato del prodotto è una riga a sé, perché ha un prezzo diverso (es. 250 ml e 1000 ml).", 11, False),
         ("", 11, False),
-        ("ATTENZIONE: le righe dei servizi sono evidenziate in GIALLO perché sono ancora quelle di esempio.", 11, False),
-        ("Vanno sostituite con i servizi e i prezzi veri del negozio.", 11, False),
+        ("Le celle GIALLE nella colonna durata_min sono da compilare: quanti minuti dura", 11, False),
+        ("in media ogni servizio. Servono per capire quali servizi rendono di più per ora di lavoro.", 11, False),
         ("", 11, False),
         ("Privacy: se compili i nomi dei clienti, questo file contiene dati personali.", 11, False),
         ("Tienilo solo tra te e papà: non caricarlo mai su un sito o un repository pubblico.", 11, False),
@@ -118,11 +114,15 @@ def main() -> None:
                  [11, 38, 30, 15, 12])
     for r, (nome, categoria, prezzo, durata) in enumerate(voci, start=2):
         e_servizio = categoria.startswith("Servizio")
-        valori = [r - 1, nome, categoria, prezzo, durata]
+        valori = [r - 1, nome, categoria, prezzo, durata if durata else None]
         for col, valore in enumerate(valori, start=1):
             c = ws_l.cell(row=r, column=col, value=valore)
             c.font = Font(name=ARIAL)
-            c.fill = PatternFill("solid", fgColor=GIALLO if e_servizio else GRIGIO)
+            c.fill = PatternFill("solid", fgColor=GRIGIO)
+            # Giallo = da compilare: le durate dei servizi mancano ancora e
+            # senza di loro non si può calcolare la resa per ora di lavoro.
+            if col == 5 and e_servizio and not durata:
+                c.fill = PatternFill("solid", fgColor=GIALLO)
             if col == 4:
                 c.number_format = '"€" #,##0.00'
 
@@ -133,7 +133,7 @@ def main() -> None:
                   "Stato", "Cliente (facoltativo)", "Note"],
                  [12, 8, 30, 16, 17, 13, 24, 28])
 
-    esempio = [date(2026, 8, 18), time(17, 30), "Taglio + barba", 26.0,
+    esempio = [date(2026, 8, 18), time(17, 30), "Taglio Uomo Stilista", 20.0,
                "Carta", "Completato", "Marco Rossi", "riga di ESEMPIO: cancellami"]
     for col, valore in enumerate(esempio, start=1):
         c = ws_r.cell(row=2, column=col, value=valore)
